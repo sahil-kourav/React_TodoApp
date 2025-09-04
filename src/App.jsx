@@ -5,14 +5,7 @@ import { toast } from "react-toastify";
 const App = () => {
   const [title, setTitle] = useState("");
   const [summary, setSummary] = useState("");
-  const [todos, setTodos] = useState([
-    {
-      id: nanoid(),
-      title: "Plan Week",
-      summary: "Make a schedule for next week’s tasks",
-      isCompleted: false,
-    },
-  ]);
+  const [todos, setTodos] = useState([]);
 
   const submitHandler = (e) => {
     e.preventDefault();
