@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { nanoid } from "nanoid";
 import { toast } from "react-toastify";
+import { todoContext } from "../context/context";
 
-const CreateTodo = (props) => {
+const CreateTodo = () => {
+const [todos, setTodos] = useContext(todoContext)
+
   const [title, setTitle] = useState("");
   const [summary, setSummary] = useState("");
 
-  const todos = props.todos;
-  const setTodos = props.setTodos;
 
   const submitHandler = (e) => {
     e.preventDefault();

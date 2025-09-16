@@ -7,8 +7,8 @@ const App = () => {
 
   return (
     <div className="w-screen h-screen flex p-10">
-      <CreateTodo todos={todos} setTodos={setTodos} />
-      <ReadTodo todos={todos} setTodos={setTodos} />
+      <CreateTodo />
+      <ReadTodo />
     </div>
   );
 };
