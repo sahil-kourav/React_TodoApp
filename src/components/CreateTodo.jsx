@@ -1,10 +1,12 @@
 import React, { useContext, useState } from "react";
 import { nanoid } from "nanoid";
 import { toast } from "react-toastify";
-import { todoContext } from "../context/context";
+// import { todoContext } from "../context/context";
+import todosContext from "../context/todosContext";
 
 const CreateTodo = () => {
-const [todos, setTodos] = useContext(todoContext)
+// const [todos, setTodos] = useContext(todoContext)
+const [todos, setTodos] = useContext(todosContext)
 
   const [title, setTitle] = useState("");
   const [summary, setSummary] = useState("");

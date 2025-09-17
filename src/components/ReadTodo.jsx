@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
 import { toast } from "react-toastify";
-import { todoContext } from "../context/context";
+// import { todoContext } from "../context/context";
+import todosContext from "../context/todosContext";
 
 const ReadTodo = () => {
-  const [todos, setTodos] = useContext(todoContext)
-
+  // const [todos, setTodos] = useContext(todoContext)
+const [todos, setTodos] = useContext(todosContext)
   const renderTodos = todos.map((todo) => {
     return (
       <li
